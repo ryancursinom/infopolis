@@ -31,6 +31,7 @@ const pages=$$('.frame');
 const pageNumberFor=id=>String(pages.indexOf(document.getElementById(id)?.closest('.frame'))+1).padStart(2,'0');
 const linkHTML=SECTIONS.map(([id,t])=>`<li><a href="#${id}" data-testid="toc-link-${id}"><i>${pageNumberFor(id)}</i><span>${t}</span></a></li>`).join('');
 $('#contents')?.insertAdjacentHTML('beforeend',`<ol class="toc">${linkHTML}</ol>`);
+$('#contents .toc')?.insertAdjacentHTML('beforeend','<li><a href="jogo.html" target="_blank" rel="noopener noreferrer"><i aria-hidden="true">↗</i><span>Jogo: Real ou Fake</span></a></li>');
 
 /* ---------- Active section tracking ---------- */
 const frameEls=$$('.frame, .polarizacao-spread>article[id], .editorial-spread>article[id]');

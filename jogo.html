@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Real ou fake? Investigue imagens e afirmações sobre política, consulte fontes e teste seu olhar em dez desafios da Infopolis.">
+  <title>Real ou Fake — Infopolis</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/jogo.css">
+</head>
+<body>
+  <a class="game-skip" href="#game-main">Pular para o jogo</a>
+  <header class="game-nav">
+    <a class="game-brand" href="index.html">INFO<span>POLIS</span></a>
+    <span class="game-nav__label">LABORATÓRIO DE VERIFICAÇÃO</span>
+    <a class="back-link" href="index.html">Ler a revista <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="game-main" tabindex="-1">
+    <section class="game-cover screen" id="screen-cover" aria-labelledby="cover-title">
+      <div class="game-cover__copy">
+        <p class="eyebrow"><span class="signal" aria-hidden="true"></span> UM JOGO DA INFOPOLIS</p>
+        <h1 id="cover-title">REAL<span class="game-cover__or">ou</span><em>FAKE?</em></h1>
+        <p class="cover-lead">Nem tudo é o que parece.<br>O que as fontes dizem?</p>
+        <button class="action action--orange" id="start-button">Aceitar o desafio <span aria-hidden="true">↗</span></button>
+        <p class="cover-meta">10 DESAFIOS <span>5 IMAGENS + 5 AFIRMAÇÕES</span></p>
+      </div>
+      <div class="cover-art" aria-hidden="true">
+        <span class="cover-art__index">?</span>
+        <div class="cover-art__stamp">OLHAR NÃO BASTA.<br>INVESTIGUE.</div>
+        <span class="cover-art__line"></span>
+        <div class="cover-art__tags"><span>CONTEXTO</span><span>ORIGEM</span><span>EVIDÊNCIA</span></div>
+      </div>
+    </section>
+
+    <section class="rules screen" id="screen-rules" aria-labelledby="rules-title" hidden>
+      <p class="eyebrow">ANTES DE COMEÇAR</p>
+      <h2 id="rules-title" tabindex="-1">Desconfie da aparência.<br><em>Procure a origem.</em></h2>
+      <p class="rules-lead">Você vai analisar cinco imagens e cinco afirmações sobre política e eleições. Há fotografias reais, cenas fictícias criadas com IA e afirmações verdadeiras ou falsas. A ordem muda a cada partida.</p>
+      <ol class="rules-list">
+        <li><span>01</span><div><h3>Leia o contexto.</h3><p>Nas imagens, decida entre fotografia real e criação com IA. Nas afirmações, escolha verdadeiro ou falso.</p></div></li>
+        <li><span>02</span><div><h3>Pesquise antes de decidir.</h3><p>Use as dicas e os links. Você pode abrir as fontes em outra aba e voltar ao jogo. Para busca reversa, salve a imagem e use o Google Lens.</p></div></li>
+        <li><span>03</span><div><h3>Aprenda com o gabarito.</h3><p>Cada acerto vale um ponto. A explicação aparece depois da sua resposta. Não há limite de tempo.</p></div></li>
+      </ol>
+      <div class="rules-end"><button class="action action--dark" id="play-button">Vamos investigar <span aria-hidden="true">↗</span></button><p>O exercício inclui informações falsas de forma intencional. Confira sempre a explicação e a fonte após responder.</p></div>
+    </section>
+
+    <section class="play screen" id="screen-play" aria-labelledby="question-heading" hidden>
+      <div class="round-meta"><span id="round-count">QUESTÃO 01 / 10</span><span id="round-type">IMAGEM</span><span id="round-score">0 ACERTOS</span></div>
+      <progress id="round-progress" max="10" value="0" aria-label="Questões respondidas"></progress>
+      <div class="question-layout" id="question-layout">
+        <div class="question-visual" id="question-visual">
+          <button class="question-photo" id="enlarge-image" aria-label="Ampliar imagem da questão"><img id="question-image" alt="Imagem apresentada para análise" decoding="async"><span>Ampliar imagem <span aria-hidden="true">↗</span></span></button>
+          <a class="download-image" id="download-image" download="imagem-para-verificar.jpg">Salvar imagem para pesquisar <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="question-copy">
+          <p class="eyebrow" id="question-kicker">INVESTIGUE A IMAGEM</p>
+          <h2 id="question-heading" tabindex="-1">Real ou criada com IA?</h2>
+          <p class="question-context" id="question-context"></p>
+          <blockquote class="claim" id="question-claim" hidden></blockquote>
+          <details class="research" id="research-panel"><summary>Dicas e links para investigar <span aria-hidden="true">+</span></summary><div class="research__body"><ul id="question-hints"></ul><div class="research__links"><a id="research-link" target="_blank" rel="noopener noreferrer">Consultar fonte <span aria-hidden="true">↗</span></a><a id="lens-link" href="https://lens.google/" target="_blank" rel="noopener noreferrer">Abrir Google Lens <span aria-hidden="true">↗</span></a></div></div></details>
+          <fieldset class="answers" id="answer-options"><legend>Sua resposta</legend><button class="answer" id="answer-real" type="button" data-answer="true">Foto real</button><button class="answer" id="answer-fake" type="button" data-answer="false">Criada com IA</button></fieldset>
+          <section class="feedback" id="answer-feedback" aria-labelledby="feedback-title" hidden>
+            <p class="feedback__status" id="feedback-status"></p>
+            <h3 id="feedback-title" tabindex="-1"></h3>
+            <p id="feedback-explanation"></p>
+            <p class="feedback__lesson" id="feedback-lesson" hidden></p>
+            <p class="feedback__credit" id="feedback-credit" hidden></p>
+            <a id="feedback-source" target="_blank" rel="noopener noreferrer">Conferir a fonte <span aria-hidden="true">↗</span></a>
+          </section>
+          <button class="action action--dark next-button" id="next-button" hidden>Próxima questão <span aria-hidden="true">→</span></button>
+        </div>
+      </div>
+      <p class="screen-reader-status" id="game-status" role="status" aria-live="polite" aria-atomic="true"></p>
+    </section>
+
+    <section class="results screen" id="screen-results" aria-labelledby="results-title" hidden>
+      <div class="results-top"><div><p class="eyebrow">INVESTIGAÇÃO CONCLUÍDA</p><h2 id="results-title" tabindex="-1">Seu olhar,<br><em>em perspectiva.</em></h2><p id="results-message"></p><p class="results-split" id="results-split"></p></div><div class="score-ring" id="score-ring"><div><strong id="final-score">0</strong><span>DE 10 ACERTOS</span></div></div></div>
+      <div class="results-magazine"><div><p class="eyebrow">A CONVERSA CONTINUA</p><h3>Quem fabrica o que você vê?</h3><p>Entenda como inteligência artificial, desinformação e política se cruzam na revista Infopolis.</p><div class="result-actions"><a class="action action--dark" href="index.html">Ler a revista <span aria-hidden="true">↗</span></a><button class="action action--outline" id="restart-button">Jogar novamente <span aria-hidden="true">↻</span></button></div></div><figure><a href="https://ryancursinom.github.io/infopolis/" target="_blank" rel="noopener noreferrer"><img src="assets/infopolis-qr.svg" alt="QR code para ler a revista Infopolis" width="200" height="200"></a><figcaption>ESCANEIE PARA LER A REVISTA</figcaption></figure></div>
+      <details class="review"><summary>Rever minhas respostas <span aria-hidden="true">+</span></summary><ol id="review-list"></ol></details>
+    </section>
+  </main>
+  <footer class="game-footer"><span>INFOPOLIS · REAL OU FAKE</span><span>Uma experiência de educação midiática.</span></footer>
+  <dialog class="image-dialog" id="image-dialog" aria-label="Imagem ampliada da questão"><button id="close-image" aria-label="Fechar imagem ampliada">Fechar ×</button><img id="large-image" alt="Imagem da questão em tamanho ampliado"></dialog>
+  <script src="js/jogo-questoes.js"></script>
+  <script src="js/jogo.js"></script>
+</body>
+</html>
