@@ -1,0 +1,215 @@
+{
+  "project_metadata": {
+    "title": "INFO/POLIS - Digital Interactive Magazine on AI Disinformation in Brazilian Elections",
+    "theme": "Awwwards-level Editorial / Data Journalism",
+    "aspect_ratio": "1440x1024 fixed frames floating over dark graphite backdrop",
+    "design_archetype": "Swiss Brutalist Editorial & Data Journalism"
+  },
+  "color_palette": {
+    "max_colors_count": 5,
+    "colors": {
+      "primary_accent": "#F4511E",
+      "primary_accent_hover": "#D83A07",
+      "near_black_ink": "#0F0F10",
+      "warm_sand_neutral": "#F4F1EA",
+      "crisp_white": "#FFFFFF"
+    },
+    "body_backdrop": {
+      "bg_dark_graphite": "#121214",
+      "description": "Neutral body backdrop over which individual 1440x1024 magazine frames float with deep ambient shadows"
+    },
+    "frame_themes": {
+      "dark_frame": {
+        "background": "#0F0F10",
+        "surface": "#18181B",
+        "text_primary": "#F4F1EA",
+        "text_secondary": "#A1A1AA",
+        "accent": "#F4511E",
+        "border": "rgba(244, 241, 234, 0.1)"
+      },
+      "light_frame": {
+        "background": "#F4F1EA",
+        "surface": "#FFFFFF",
+        "text_primary": "#0F0F10",
+        "text_secondary": "#52525B",
+        "accent": "#F4511E",
+        "border": "rgba(15, 15, 16, 0.12)"
+      }
+    }
+  },
+  "typography": {
+    "font_families": {
+      "headline": "Archivo, sans-serif",
+      "headline_weight": "800 (Expanded / Heavy ExtraBold)",
+      "accent_editorial": "Newsreader, serif",
+      "accent_style": "Italic / Regular for quotes, subtitles, and sociological definitions"
+    },
+    "fixed_type_scale": {
+      "display": {
+        "size": "168px",
+        "rem": "10.5rem",
+        "mobile_fluid": "clamp(4.5rem, 11vw, 10.5rem)",
+        "line_height": "0.85",
+        "letter_spacing": "-0.04em",
+        "usage": "Cover Kinetic Title INFO/POLIS"
+      },
+      "h1": {
+        "size": "64px",
+        "rem": "4rem",
+        "line_height": "0.95",
+        "letter_spacing": "-0.03em",
+        "usage": "Macro transitions, major intro statements"
+      },
+      "h2": {
+        "size": "44px",
+        "rem": "2.75rem",
+        "line_height": "1.05",
+        "letter_spacing": "-0.02em",
+        "usage": "Section titles & primary frame headings"
+      },
+      "h3": {
+        "size": "20px",
+        "rem": "1.25rem",
+        "line_height": "1.3",
+        "letter_spacing": "-0.01em",
+        "usage": "Box headings, card titles, section eyebrows"
+      },
+      "body": {
+        "size": "15.5px",
+        "rem": "0.97rem",
+        "line_height": "1.6",
+        "letter_spacing": "0em",
+        "usage": "Article body paragraphs, editorial text"
+      },
+      "small": {
+        "size": "12px",
+        "rem": "0.75rem",
+        "line_height": "1.4",
+        "letter_spacing": "0.08em",
+        "text_transform": "uppercase",
+        "usage": "Metadata, figure captions, chart tags, value pills"
+      }
+    },
+    "strict_alignment_rules": {
+      "alignment": "ALL text MUST be left-aligned (text-left). Absolutely no center-aligned text.",
+      "side_gutter": "96px (px-24 / px-[96px]) uniform margin on all 1440x1024 frames."
+    }
+  },
+  "layout_architecture": {
+    "frame_dimensions": "1440px x 1024px fixed aspect ratio sections centered on screen",
+    "outer_container": "bg-[#121214] py-12 flex flex-col items-center gap-16 overflow-x-hidden",
+    "frame_shadow": "shadow-[0_25px_60px_-15px_rgba(0,0,0,0.85)]",
+    "frame_border": "border border-white/10",
+    "alternating_pattern": "Frame 1 (Dark Cover) -> Frame 2 (Light Editorial) -> Frame 3 (Dark Data/Charts) -> Frame 4 (Light Sociological concepts) -> Frame 5 (Dark Deepfake Showcase) -> Frame 6 (Light Conclusion)"
+  },
+  "reusable_components_spec": [
+    {
+      "component_name": "SectionFrame",
+      "description": "Base floating 1440x1024 section container supporting alternating light and dark themes with fixed 96px gutters.",
+      "props_spec": "theme ('dark' | 'light'), id (string), title (string), children",
+      "classes": "w-full max-w-[1440px] min-h-[1024px] px-[96px] py-[64px] relative overflow-hidden flex flex-col justify-between transition-colors duration-500",
+      "test_id": "section-frame-{id}"
+    },
+    {
+      "component_name": "SectionHeading",
+      "description": "Editorial header combining Archivo 800 title with Newsreader serif italic eyebrow and orange accent line.",
+      "props_spec": "eyebrow (string), title (string), subtitle (string), theme ('dark' | 'light')",
+      "features": "Left-aligned, 44px or 64px headline scale, #F4511E vertical or horizontal accent bar",
+      "test_id": "section-heading"
+    },
+    {
+      "component_name": "EditorialCard",
+      "description": "Bento grid item with hover duotone image effect and editorial typography.",
+      "props_spec": "title, category, text, quote, image, theme",
+      "features": "Newsreader italic pull-quotes, Archivo 800 headers, 1px contrast border, hover lift effect",
+      "test_id": "editorial-card"
+    },
+    {
+      "component_name": "InteractiveChart",
+      "description": "Animated SVG/HTML chart visualizing deepfake spread and disinformation statistics.",
+      "props_spec": "dataPoints (array), chartType ('bar' | 'timeline' | 'comparison')",
+      "features": "Bars animate width/height on scroll reveal, floating hover value pills in #F4511E orange with small 12px text",
+      "test_id": "interactive-chart"
+    },
+    {
+      "component_name": "ImageComposition",
+      "description": "Editorial photo composition with duotone grayscale-to-color transition on hover.",
+      "props_spec": "src, alt, caption, tag",
+      "features": "Grayscale filter default (`filter grayscale hover:grayscale-0 transition-all duration-700 ease-out`), news caption overlay, noise texture backdrop",
+      "test_id": "image-composition"
+    },
+    {
+      "component_name": "ContentsLink",
+      "description": "Sticky top/side navigation bar with real-time scroll reading progress indicator and drawer TOC trigger.",
+      "props_spec": "currentFrameIndex, totalFrames, sectionList",
+      "features": "Progress bar in #F4511E, active frame pill, slide-out table of contents drawer",
+      "test_id": "sticky-reading-nav"
+    },
+    {
+      "component_name": "RevealPanel",
+      "description": "Expandable accordion panel for unpacking complex sociological concepts.",
+      "props_spec": "conceptTitle, quoteAuthor, theorySummary, fullAnalysis, isOpen",
+      "features": "Smooth expansion, Archivo 800 toggle headers, Newsreader italic theory callouts",
+      "test_id": "reveal-panel"
+    }
+  ],
+  "motion_and_interactions": {
+    "kinetic_cover": {
+      "title": "INFO/POLIS",
+      "effect": "Line-by-line masked reveal with stagger effect, high impact Archivo 800 at 168px font scale.",
+      "duration": "1.2s cubic-bezier(0.16, 1, 0.3, 1)"
+    },
+    "editorial_marquee": {
+      "words": ["INFORMATIONAL ANOMIE", "POST-TRUTH", "SOCIETY OF THE SPECTACLE", "GENERATIVE AI", "ELECTORAL DISINFORMATION", "ALGORITHMIC POLARIZATION"],
+      "speed": "35s linear infinite continuous loop",
+      "font": "Archivo 800 uppercase tracking-widest text-opacity-40"
+    },
+    "count_up_stat_cards": {
+      "trigger": "Viewport intersection observer",
+      "stats": [
+        { "value": "78%", "label": "Voters exposed to AI-manipulated audio/video on messaging apps" },
+        { "value": "1.2M", "label": "Deepfake audio clips detected during campaign peak" },
+        { "value": "4.5x", "label": "Faster viral velocity for synthetic disinformation over verified news" },
+        { "value": "89%", "label": "Disinformation targeted at trust in electronic voting machinery" }
+      ]
+    },
+    "image_hover": "Grayscale to vibrant original color transition with smooth 700ms timing"
+  },
+  "image_assets": [
+    {
+      "url": "https://images.unsplash.com/photo-1673690728194-d5e8ace6a36f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzN8MHwxfHNlYXJjaHw0fHxicmF6aWwlMjBlbGVjdGlvbiUyMHBvbGl0aWNhbCUyMHJhbGx5JTIwdm90ZXxlbnwwfHx8fDE3OTIzNjc1MDB8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Brazilian political protest sign with democratic slogans",
+      "category": "Hero / Electoral Context Frame"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1632184078944-b8a9cd828a57?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzN8MHwxfHNlYXJjaHwxfHxicmF6aWwlMjBlbGVjdGlvbiUyMHBvbGl0aWNhbCUyMHJhbGx5JTIwdm90ZXxlbnwwfHx8fDE3OTIzNjc1MDB8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Brazilian flag blowing in wind with urban backdrop",
+      "category": "Editorial Section Background / Composition"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1696272440000-0808a203c852?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzN8MHwxfHNlYXJjaHwxfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwZGVlcGZha2UlMjBkaWdpdGFsJTIwbWVkaWElMjBzY3JlZW4lMjBmYWtlJTIwbmV3c3xlbnwwfHx8fDE3OTIzNjc1MDB8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Synthetic mannequin looking into digital computer screen with facial mesh analysis",
+      "category": "Deepfake & AI Technology Showcase"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1636188540036-1879f679c2b0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzN8MHwxfHNlYXJjaHwzfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwZGVlcGZha2UlMjBkaWdpdGFsJTIwbWVkaWElMjBzY3JlZW4lMjBmYWtlJTIwbmV3c3xlbnwwfHx8fDE3OTIzNjc1MDB8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Vintage typewriter with 'fake news' paper adjacent to digital TV screen",
+      "category": "Post-Truth & Media Disruption Card"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1740214610871-d6477c0f1824?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzN8MHwxfHNlYXJjaHw0fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwZGVlcGZha2UlMjBkaWdpdGFsJTIwbWVkaWElMjBzY3JlZW4lMjBmYWtlJTIwbmV3c3xlbnwwfHx8fDE3OTIzNjc1MDB8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Scrabble tiles spelling NEWS and DEEPSEEK on wooden editorial surface",
+      "category": "Sociological Analysis Frame"
+    }
+  ],
+  "instructions_to_main_agent": [
+    "Load Google Fonts 'Archivo' (weights 400, 600, 800) and 'Newsreader' (italics and regular) in index.html or App.css.",
+    "Implement the fixed 1440x1024 floating card container layout over dark graphite #121214 background.",
+    "Strictly follow left-alignment for ALL text elements across all frames.",
+    "Ensure side gutter of exactly 96px (px-24) inside each SectionFrame component.",
+    "Implement alternating dark (#0F0F10) and light (#F4F1EA) section frames.",
+    "Integrate kinetic title text reveal for 'INFO/POLIS' at ~168px scale.",
+    "Include the interactive data charts, duotone image hover effects, stat cards with count-up, expandable RevealPanels, and sticky reading nav with TOC drawer.",
+    "Attach data-testid attributes to all interactive elements, frame sections, buttons, and navigation controls."
+  ]
+}

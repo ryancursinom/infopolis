@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+
+:root{
+  --orange:#F4511E;
+  --ember:#C13A0E;
+  --flame:#FF7A45;
+  --ink:#0F0E0C;
+  --paper:#FFFFFF;
+  --sand:#F2EDE3;
+  --graphite:#141413;
+  --line:rgba(15,14,12,.16);
+  --tint:rgba(15,14,12,.6);
+  --font-sans:'Archivo',-apple-system,'Segoe UI',sans-serif;
+  --font-serif:'Newsreader',Georgia,serif;
+  --fs-display:clamp(88px,11.8vw,168px);
+  --fs-h1:clamp(44px,4.45vw,64px);
+  --fs-h2:clamp(30px,3.05vw,44px);
+  --fs-h3:20px;
+  --fs-p:15.5px;
+  --fs-small:12px;
+  --gutter:clamp(24px,6.7vw,96px);
+  --pad-y:clamp(56px,6.1vw,88px);
+  --pad-b:88px;
+  --ease:cubic-bezier(.19,1,.22,1);
+}
