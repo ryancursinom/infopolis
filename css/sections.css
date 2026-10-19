@@ -96,7 +96,10 @@
 .footer-page__qr figcaption{display:grid;gap:12px;margin-top:24px;text-align:left;overflow-wrap:anywhere}
 .footer-page__qr figcaption>span{font-size:10px;letter-spacing:.2em;font-weight:800;color:var(--flame)}
 .footer-page__qr figcaption>a{font-size:12px;text-decoration:none;line-height:1.6}
-.references-dialog{width:min(820px,calc(100vw - 32px));max-height:calc(100dvh - 48px);padding:clamp(24px,4vw,48px);border:1px solid rgba(15,14,12,.15);background:var(--paper);color:var(--ink);overflow:auto;overscroll-behavior:contain;box-shadow:0 24px 90px #0008}
+.references-dialog{--dialog-pad:clamp(24px,4vw,48px);width:min(820px,calc(100vw - 32px));max-height:calc(100dvh - 48px);padding:0;border:1px solid rgba(15,14,12,.15);background:#FFFFFF;color:var(--ink);overflow:hidden;isolation:isolate;opacity:1;box-shadow:0 24px 90px #0008}
+.references-dialog[open]{display:flex;flex-direction:column}
+.references-dialog__content{min-height:0;overflow:auto;overscroll-behavior:contain;padding:0 var(--dialog-pad) var(--dialog-pad);background:#FFFFFF}
+.references-dialog__content>.references-dialog__note{margin-top:0}
 .references-dialog::backdrop{background:rgba(10,10,10,.78);backdrop-filter:blur(8px)}
 .references-dialog__head{display:flex;align-items:flex-start;justify-content:space-between;gap:24px}
 .references-dialog__head h2{font-size:clamp(28px,4vw,44px)}
@@ -106,6 +109,28 @@
 .references-dialog__list li{padding:18px 0 18px 8px;border-top:1px solid rgba(15,14,12,.16);font-size:15px;line-height:1.75;overflow-wrap:anywhere}
 .references-dialog__list li::marker{font-weight:800;color:var(--ember)}
 .references-dialog__list a{color:var(--ember);text-underline-offset:3px}
+.references-dialog__head{position:relative;z-index:3;flex-shrink:0;background:#FFFFFF;padding:var(--dialog-pad) var(--dialog-pad) 24px}
+.reference-groups{margin-top:28px;border-bottom:1px solid rgba(15,14,12,.16)}
+.reference-group{border-top:1px solid rgba(15,14,12,.16)}
+.reference-group>summary{display:grid;grid-template-columns:26px minmax(0,1fr) 30px 18px;align-items:center;gap:16px;padding:22px 0;list-style:none;cursor:pointer;transition:color .2s}
+.reference-group>summary::-webkit-details-marker{display:none}
+.reference-group>summary:focus-visible{outline:3px solid var(--orange);outline-offset:4px}
+.reference-group>summary:hover,.reference-group[open]>summary{color:var(--ember)}
+.reference-group__number{font-size:11px;font-weight:800;color:var(--ember)}
+.reference-group__title{font-size:17px;font-weight:700;line-height:1.4}
+.reference-group__count{font-size:11px;text-align:center;border:1px solid currentColor;border-radius:20px;padding:2px 4px;font-variant-numeric:tabular-nums}
+.reference-group__icon{position:relative;width:16px;height:16px;color:var(--ember)}
+.reference-group__icon::before,.reference-group__icon::after{content:'';position:absolute;background:currentColor;inset:7px 0 auto;height:2px}
+.reference-group__icon::after{transform:rotate(90deg);transition:transform .2s}
+.reference-group[open] .reference-group__icon::after{transform:rotate(0)}
+.reference-group>.references-dialog__list{margin:0 0 24px 26px;padding-left:24px}
+.reference-group .references-dialog__list li{font-size:14px;line-height:1.8}
+.reference-entry__link{display:block;margin-top:6px;font-weight:600}
+@media(max-width:600px){
+  .reference-group>summary{grid-template-columns:20px minmax(0,1fr) 26px 16px;gap:10px;padding-block:18px}
+  .reference-group__title{font-size:15px}
+  .reference-group>.references-dialog__list{margin-left:0;padding-left:22px}
+}
 @media(max-width:800px){
   .footer-page__layout{grid-template-columns:minmax(0,1fr);gap:52px}
   .footer-page__qr{justify-self:start;width:min(260px,100%)}

@@ -1,0 +1,612 @@
+{
+  "groups": [
+    [
+      "cotidiano",
+      "IA no cotidiano e na educação"
+    ],
+    [
+      "desinformacao",
+      "Desinformação, deepfakes e riscos"
+    ],
+    [
+      "confiabilidade",
+      "Confiabilidade das respostas de IA"
+    ],
+    [
+      "polarizacao",
+      "Polarização, eleições e economia"
+    ],
+    [
+      "sociologia",
+      "Sociedade do espetáculo, anomia e pós-verdade"
+    ],
+    [
+      "cambridge",
+      "Cambridge Analytica e proteção de dados"
+    ],
+    [
+      "regulacao",
+      "Regulamentação e integridade eleitoral"
+    ],
+    [
+      "recepcao",
+      "Confiança, recepção e consumo de notícias"
+    ]
+  ],
+  "references": [
+    {
+      "url": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/quaest-presidente-outubro-2026-segundo-turno/",
+      "text": "Gazeta do Povo.[ O que mostra a nova pesquisa Quaest para presidente no 2º turno](https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/quaest-presidente-outubro-2026-segundo-turno/). 14 out. 2026.",
+      "group": "polarizacao",
+      "origin": "polarizacao",
+      "priority": 3
+    },
+    {
+      "url": "https://edisciplinas.usp.br/pluginfile.php/7828390/mod_folder/content/0/livro%20integra%20A%20Sociedade%20do%20Espet%C3%A1culo.pdf",
+      "text": "DEBORD, Guy. A sociedade do espetáculo (1967), teses 18, 60 e 62.[ Edição digital](https://edisciplinas.usp.br/pluginfile.php/7828390/mod_folder/content/0/livro%20integra%20A%20Sociedade%20do%20Espet%C3%A1culo.pdf); conferir paginação na edição Contraponto (1997).",
+      "group": "sociologia",
+      "origin": "polarizacao",
+      "priority": 3
+    },
+    {
+      "url": "https://quaest.com.br/disputa-presidencial-de-2026-geografia-eleitoral/",
+      "text": "Quaest.[ A eleição que resiste a mudar](https://quaest.com.br/disputa-presidencial-de-2026-geografia-eleitoral/). 2026.",
+      "group": "polarizacao",
+      "origin": "polarizacao",
+      "priority": 3
+    },
+    {
+      "url": "https://ncnews.com.br/2026/09/07/pesquisa-quaest-2026-revela-polarizacao-lula-x-bolsonarismo/",
+      "text": "NC News.[ Um ponto separa Lula de Flávio: Quaest mostra eleição de 2026 cada vez mais apertada](https://ncnews.com.br/2026/09/07/pesquisa-quaest-2026-revela-polarizacao-lula-x-bolsonarismo/). 7 set. 2026.",
+      "group": "polarizacao",
+      "origin": "polarizacao",
+      "priority": 3
+    },
+    {
+      "url": "https://www.scielo.br/j/op/a/SCmKT44FzwmGMp6jtBZ3Dfk/?format=html&lang=pt&ilang=pt_BR",
+      "text": "FUKS, Mario; MARQUES, Pedro Henrique.[ Polarização e contexto: medindo e explicando a polarização política no Brasil](https://www.scielo.br/j/op/a/SCmKT44FzwmGMp6jtBZ3Dfk/?format=html&lang=pt&ilang=pt_BR). Opinião Pública, v. 28, n. 3, 2022.",
+      "group": "polarizacao",
+      "origin": "polarizacao",
+      "priority": 3
+    },
+    {
+      "url": "https://tagteam.harvard.edu/hub_feeds/3884/feed_items/17175199",
+      "text": "JOTA.[ Quem são os possíveis candidatos a presidente da República nas eleições de 2026](https://tagteam.harvard.edu/hub_feeds/3884/feed_items/17175199). 9 jan. 2026.",
+      "group": "polarizacao",
+      "origin": "polarizacao",
+      "priority": 3
+    },
+    {
+      "url": "https://theconversation.com/eleicoes-2026-estudo-aponta-que-69-dos-eleitores-nao-estao-polarizados-enquanto-crescem-negatividade-e-apatia-285467",
+      "text": "The Conversation.[ Eleições 2026: estudo aponta que 69% dos eleitores não estão polarizados, enquanto crescem negatividade e apatia](https://theconversation.com/eleicoes-2026-estudo-aponta-que-69-dos-eleitores-nao-estao-polarizados-enquanto-crescem-negatividade-e-apatia-285467). 2026.",
+      "group": "polarizacao",
+      "origin": "polarizacao",
+      "priority": 3
+    },
+    {
+      "url": "https://www.brasilemfolhas.com.br/2026/09/estudo-mostra-que-69-dos-eleitores-brasileiros-nao-sao-polarizados/",
+      "text": "Brasil em Folhas.[ Estudo mostra que 69% dos eleitores brasileiros não são polarizados](https://www.brasilemfolhas.com.br/2026/09/estudo-mostra-que-69-dos-eleitores-brasileiros-nao-sao-polarizados/). set. 2026.",
+      "group": "polarizacao",
+      "origin": "polarizacao",
+      "priority": 3
+    },
+    {
+      "url": "https://diariodocomercio.com.br/?p=357475",
+      "text": "Diário do Comércio.[ Polarização ameaça o futuro do Brasil](https://diariodocomercio.com.br/?p=357475), resenha de NUNES, Felipe; TRAUMANN, Thomas. Biografia do abismo. Rio de Janeiro: HarperCollins, 2023.",
+      "group": "polarizacao",
+      "origin": "polarizacao",
+      "priority": 3
+    },
+    {
+      "url": "https://maisretorno.com/blog/termos/t/tripe-macroeconomico",
+      "text": "Mais Retorno.[ Tripé macroeconômico](https://maisretorno.com/blog/termos/t/tripe-macroeconomico).",
+      "group": "polarizacao",
+      "origin": "polarizacao",
+      "priority": 3
+    },
+    {
+      "url": "https://fatonews.com.br/2026/10/14/selic-a-1375-como-os-juros-mexem-com-o-seu-bolso-a-sua-empresa-e-o-seu-investimento-e-o-que-lula-e-flavio-prometem/",
+      "text": "FatoNews.[ Selic a 13,75%: como os juros mexem com o seu bolso e o que Lula e Flávio prometem](https://fatonews.com.br/2026/10/14/selic-a-1375-como-os-juros-mexem-com-o-seu-bolso-a-sua-empresa-e-o-seu-investimento-e-o-que-lula-e-flavio-prometem/). 14 out. 2026.",
+      "group": "polarizacao",
+      "origin": "polarizacao",
+      "priority": 3
+    },
+    {
+      "url": "https://bpmoney.com.br/politica/o-que-lula-prometeu-economia-reeleicao/",
+      "text": "BPMoney.[ Lula detalha plano econômico de reeleição com meta de superávit de 1,5% do PIB em 2030](https://bpmoney.com.br/politica/o-que-lula-prometeu-economia-reeleicao/). out. 2026.",
+      "group": "polarizacao",
+      "origin": "polarizacao",
+      "priority": 3
+    },
+    {
+      "url": "https://mais.opovo.com.br/jornal/reportagem/2026/10/11/o-que-flavio-e-lula-pensam-para-o-futuro-da-economia-brasileira.html",
+      "text": "O Povo.[ O que Flávio e Lula pensam para o futuro da economia brasileira](https://mais.opovo.com.br/jornal/reportagem/2026/10/11/o-que-flavio-e-lula-pensam-para-o-futuro-da-economia-brasileira.html). 11 out. 2026.",
+      "group": "polarizacao",
+      "origin": "polarizacao",
+      "priority": 3
+    },
+    {
+      "url": "https://sbtnews.sbt.com.br/noticia/eleicoes/flavio-x-lula-o-que-defendem-para-economia-e-trabalho",
+      "text": "SBT News.[ Flávio x Lula: o que defendem para economia e trabalho](https://sbtnews.sbt.com.br/noticia/eleicoes/flavio-x-lula-o-que-defendem-para-economia-e-trabalho). out. 2026.",
+      "group": "polarizacao",
+      "origin": "polarizacao",
+      "priority": 3
+    },
+    {
+      "url": "https://bpmoney.com.br/economia/lula-x-flavio-propostas-economicas-2026/",
+      "text": "BPMoney.[ Lula x Flávio: o que muda no seu bolso com cada governo?](https://bpmoney.com.br/economia/lula-x-flavio-propostas-economicas-2026/). out. 2026.",
+      "group": "polarizacao",
+      "origin": "polarizacao",
+      "priority": 3
+    },
+    {
+      "url": "https://www.folhavitoria.com.br/eleicoes/eleicoes-2026-veja-as-propostas-de-governo-de-flavio-bolsonaro-e-lula/",
+      "text": "Folha Vitória.[ Eleições 2026: veja as propostas de governo de Flávio Bolsonaro e Lula](https://www.folhavitoria.com.br/eleicoes/eleicoes-2026-veja-as-propostas-de-governo-de-flavio-bolsonaro-e-lula/). out. 2026.",
+      "group": "polarizacao",
+      "origin": "polarizacao",
+      "priority": 3
+    },
+    {
+      "url": "https://zenodo.org/records/17865656",
+      "text": "[ Autonomia do Banco Central e sua eficácia no controle da inflação no Brasil (2022-2024)](https://zenodo.org/records/17865656). Zenodo.",
+      "group": "polarizacao",
+      "origin": "polarizacao",
+      "priority": 3
+    },
+    {
+      "url": "https://diplomatique.org.br/guy-debord-o-irrecuperavel/",
+      "text": "DEBORD, Guy. Comentários sobre a sociedade do espetáculo (1988). Apresentação em[ Le Monde Diplomatique Brasil](https://diplomatique.org.br/guy-debord-o-irrecuperavel/).",
+      "group": "sociologia",
+      "origin": "polarizacao",
+      "priority": 3
+    },
+    {
+      "url": "https://www.ipsos.com/pt-br/polarizacao-desafios-de-governabilidade-e-o-voto-de-2026",
+      "text": "Ipsos.[ Polarização, desafios de governabilidade e o voto de 2026](https://www.ipsos.com/pt-br/polarizacao-desafios-de-governabilidade-e-o-voto-de-2026).",
+      "group": "polarizacao",
+      "origin": "polarizacao",
+      "priority": 3
+    },
+    {
+      "url": "https://www.poder360.com.br/eleicoes/biografia-do-abismo-fala-sobre-riscos-da-polarizacao-politica/",
+      "text": "Poder360.[ “Biografia do Abismo” fala sobre riscos da polarização política](https://www.poder360.com.br/eleicoes/biografia-do-abismo-fala-sobre-riscos-da-polarizacao-politica/). 13 dez. 2023.",
+      "group": "polarizacao",
+      "origin": "polarizacao",
+      "priority": 3
+    },
+    {
+      "url": "https://quaest.com.br/inovacoes-na-metodologia-da-quaest-2026/",
+      "text": "Quaest.[ As novidades da metodologia da Quaest para 2026](https://quaest.com.br/inovacoes-na-metodologia-da-quaest-2026/). 2026.",
+      "group": "polarizacao",
+      "origin": "polarizacao",
+      "priority": 3
+    },
+    {
+      "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/182-3107-cambridge-analytica-llc-matter",
+      "text": "Federal Trade Commission. Cambridge Analytica, LLC, In the Matter of.",
+      "group": "cambridge",
+      "origin": "cambridge",
+      "priority": 2
+    },
+    {
+      "url": "https://ico.org.uk/for-the-public/ico-40/cambridge-analytica-raids",
+      "text": "Information Commissioner’s Office. Cambridge Analytica raids.",
+      "group": "cambridge",
+      "origin": "cambridge",
+      "priority": 2
+    },
+    {
+      "url": "https://publications.parliament.uk/pa/cm201719/cmselect/cmcumeds/1791/179103.htm",
+      "text": "UK Parliament. Disinformation and “fake news”: Final Report.",
+      "group": "cambridge",
+      "origin": "cambridge",
+      "priority": 2
+    },
+    {
+      "url": "https://www.psychometrics.cam.ac.uk/about-us/media-reports/statement-on-politics",
+      "text": "University of Cambridge, Psychometrics Centre. Statement on politics.",
+      "group": "cambridge",
+      "origin": "cambridge",
+      "priority": 2
+    },
+    {
+      "url": "https://www.cetic.br/pt/publicacao/pesquisa-sobre-o-uso-das-tecnologias-de-informacao-e-comunicacao-nos-domicilios-brasileiros-tic-domicilios-2025/",
+      "text": "Cetic.br. TIC Domicílios 2025.",
+      "group": "cotidiano",
+      "origin": "tese",
+      "priority": 0
+    },
+    {
+      "url": "https://www.oecd.org/en/topics/generative-ai.html",
+      "text": "OCDE. Generative AI.",
+      "group": "cotidiano",
+      "origin": "tese",
+      "priority": 0
+    },
+    {
+      "url": "https://www.oecd.org/en/publications/pisa-2025-results-volume-i_73451bc5-en.html",
+      "text": "OCDE. PISA 2025 Results (Volume I).",
+      "group": "cotidiano",
+      "origin": "tese",
+      "priority": 0
+    },
+    {
+      "url": "https://portal.febraban.org.br/noticia/4474/pt-br/",
+      "text": "FEBRABAN. Pesquisa sobre percepções dos brasileiros acerca da inteligência artificial.",
+      "group": "cotidiano",
+      "origin": "tese",
+      "priority": 0
+    },
+    {
+      "url": "https://www.agencialupa.org/noticias/2026/02/05/fakes-com-ia-crescem-308-em-um-ano-revela-estudo-inedito-da-lupa/",
+      "text": "Observatório Lupa. Fakes com IA crescem 308% em um ano, revela estudo inédito da Lupa. 05 fev. 2026.",
+      "group": "desinformacao",
+      "origin": "tese",
+      "priority": 0
+    },
+    {
+      "url": "https://www.weforum.org/publications/global-risks-report-2025/",
+      "text": "World Economic Forum. Global Risks Report 2025.",
+      "group": "desinformacao",
+      "origin": "tese",
+      "priority": 0
+    },
+    {
+      "url": "https://www.dataprivacybr.org/documentos/relatorio-eleicoes-2026-ia-na-pre-eleicao/",
+      "text": "Data Privacy Brasil. Relatório Eleições 2026: IA na pré-eleição.",
+      "group": "desinformacao",
+      "origin": "tese",
+      "priority": 0
+    },
+    {
+      "url": "https://www.tse.jus.br/legislacao/compilada/res/2026/resolucao-no-23-755-de-2-de-marco-de-2026",
+      "text": "Tribunal Superior Eleitoral. Resolução nº 23.755, de 2 de março de 2026.",
+      "group": "regulacao",
+      "origin": "tese",
+      "priority": 0
+    },
+    {
+      "url": "https://www.tse.jus.br/legislacao/compilada/prt/2026/portaria-no-463-de-27-de-julho-de-2026",
+      "text": "Tribunal Superior Eleitoral. Portaria nº 463, de 27 de julho de 2026.",
+      "group": "regulacao",
+      "origin": "tese",
+      "priority": 0
+    },
+    {
+      "url": "https://www.tse.jus.br/comunicacao/noticias/2026/Setembro/planos-de-conformidade-das-plataformas-digitais-estao-disponiveis-no-portal-do-tse",
+      "text": "Tribunal Superior Eleitoral. Planos de conformidade das plataformas digitais estão disponíveis no Portal da Justiça Eleitoral. Set. 2026.",
+      "group": "regulacao",
+      "origin": "tese",
+      "priority": 0
+    },
+    {
+      "url": "https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/eleicoes-2026-mpf-se-reune-com-plataformas-de-ia-para-garantir-cumprimento-das-regras-eleitorais",
+      "text": "Ministério Público Federal. Eleições 2026: MPF se reúne com plataformas de IA para garantir cumprimento das regras eleitorais.",
+      "group": "regulacao",
+      "origin": "tese",
+      "priority": 0
+    },
+    {
+      "url": "https://www.bocadeia.com.br/",
+      "text": "ITS Rio; Ministério Público Federal. Pesquisa Boca de IA.",
+      "group": "regulacao",
+      "origin": "tese",
+      "priority": 0
+    },
+    {
+      "url": "https://www.undp.org/policy-centre/governance/publications/defending-information-integrity-actions-election-stakeholders",
+      "text": "UNDP. Defending Information Integrity: Actions for Election Stakeholders.",
+      "group": "regulacao",
+      "origin": "tese",
+      "priority": 0
+    },
+    {
+      "url": "https://bibliotecadigital.mj.gov.br/handle/1/17316",
+      "text": "Ministério da Justiça e Segurança Pública. Documento sobre integridade da informação — Biblioteca Digital, registro 17316.",
+      "group": "regulacao",
+      "origin": "tese",
+      "priority": 0
+    },
+    {
+      "url": "https://www.uninter.com/noticias/pessoas-mais-velhas-compartilham-mais-noticias-falsas",
+      "text": "Pesquisa sobre compartilhamento de notícias falsas por pessoas mais velhas.",
+      "group": "recepcao",
+      "origin": "tese",
+      "priority": 0
+    },
+    {
+      "url": "https://blogs.oglobo.globo.com/sonar-a-escuta-das-redes/post/pessoas-mais-velhas-compartilham-mais-desinformacao-e-tem-posicoes-politicas-mais-polarizadas-diz-estudo.html",
+      "text": "Pesquisa sobre compartilhamento de notícias falsas por pessoas mais velhas.",
+      "group": "recepcao",
+      "origin": "tese",
+      "priority": 0
+    },
+    {
+      "url": "https://tvbrasil.ebc.com.br/midia-em-foco/2018/03/como-combater-fake-news",
+      "text": "TV Brasil. Mídia em Foco: como combater fake news. 2018.",
+      "group": "recepcao",
+      "origin": "tese",
+      "priority": 0
+    },
+    {
+      "url": "https://www.cetic.br/media/docs/publicacoes/2/pt-br/20260408150919/painel_tic_integridade_informacao_2026_livro_pt.pdf",
+      "text": "Cetic.br. Painel TIC — Integridade da Informação. Livro publicado em 2026.",
+      "group": "recepcao",
+      "origin": "tese",
+      "priority": 0
+    },
+    {
+      "url": "https://cetic.br/pt/tics/painel/painel/integridade/F4/",
+      "text": "Cetic.br. Painel TIC — Integridade da Informação: indicador F4.",
+      "group": "recepcao",
+      "origin": "tese",
+      "priority": 0
+    },
+    {
+      "url": "https://www.todamateria.com.br/anomia/coe",
+      "text": "Toda Matéria. Anomia.",
+      "group": "sociologia",
+      "origin": "tese",
+      "priority": 0
+    },
+    {
+      "url": "https://pepsic-bvsalud-org.translate.goog/scielo.php?script=sci_arttext&pid=S1519-549X2021000300002&lng=pt&nrm=iso&tlng=en&_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR",
+      "text": "Estudo sobre percepção de crise, anomia e confiança institucional. PePSIC, 2021. Identificador S1519-549X2021000300002.",
+      "group": "sociologia",
+      "origin": "tese",
+      "priority": 0
+    },
+    {
+      "url": "https://dfrlab.org/2024/11/26/brazil-election-ai-deepfakes/",
+      "text": "DFRLab. Monitoramento de inteligência artificial e deepfakes nas eleições municipais brasileiras de 2024. 26 nov. 2024.",
+      "group": "desinformacao",
+      "origin": "tese",
+      "priority": 0
+    },
+    {
+      "url": "https://academic.oup.com/histres/article/93/259/172/5716134",
+      "text": "Historical Research. Artigo sobre pós-verdade, v. 93, n. 259, p. 172 — referência indicada no material enviado.",
+      "group": "sociologia",
+      "origin": "tese",
+      "priority": 0
+    },
+    {
+      "url": "https://alafialab.org/estudo-analisa-relacao-entre-polarizacao-politica-e-consumo-de-informacao-no-brasil/",
+      "text": "Aláfia Lab. Estudo analisa relação entre polarização política e consumo de informação no Brasil.",
+      "group": "recepcao",
+      "origin": "tese",
+      "priority": 0
+    },
+    {
+      "url": "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/brazil",
+      "text": "Reuters Institute. Digital News Report 2026 — Brazil.",
+      "group": "recepcao",
+      "origin": "tese",
+      "priority": 0
+    },
+    {
+      "url": "https://cetic.br/pt/tics/domicilios/2025/individuos/M1/",
+      "text": "Cetic.br. TIC Domicílios 2025 — indicador M1: uso de inteligência artificial.",
+      "group": "cotidiano",
+      "origin": "cetic",
+      "priority": 0
+    },
+    {
+      "url": "https://cetic.br/pt/noticia/50-milhoes-de-brasileiros-ja-usam-ia-mas-potenciais-beneficios-continuam-limitados-as-camadas-de-maior-renda-e-escolaridade/",
+      "text": "Cetic.br. 50 milhões de brasileiros já usam IA, mas potenciais benefícios continuam limitados às camadas de maior renda e escolaridade.",
+      "group": "cotidiano",
+      "origin": "cetic",
+      "priority": 0
+    },
+    {
+      "url": "https://cetic.br/noticia/sete-em-cada-dez-alunos-do-ensino-medio-usam-ia-generativa-em-pesquisas-escolares-revela-tic-educacao/",
+      "text": "Cetic.br. Sete em cada dez alunos do Ensino Médio usam IA generativa em pesquisas escolares, revela TIC Educação.",
+      "group": "cotidiano",
+      "origin": "cetic",
+      "priority": 0
+    },
+    {
+      "url": "https://www.cetic.br/pt/tics/educacao/2024/alunos/H4A/",
+      "text": "Cetic.br. TIC Educação 2024 — indicador H4A: orientação sobre verificação de informações.",
+      "group": "cotidiano",
+      "origin": "cetic",
+      "priority": 0
+    },
+    {
+      "url": "https://www12.senado.leg.br/institucional/datasenado/materias/enquetes/usos-da-inteligencia-artificial-no-brasil",
+      "text": "DataSenado. Usos da inteligência artificial no Brasil.",
+      "group": "cotidiano",
+      "origin": "cetic",
+      "priority": 0
+    },
+    {
+      "url": "https://www.ipsos.com/pt-br/mais-da-metade-dos-brasileiros-acredita-que-inteligencia-artificial-vai-agravar-fake-news-aponta",
+      "text": "Ipsos. Mais da metade dos brasileiros acredita que inteligência artificial vai agravar fake news.",
+      "group": "desinformacao",
+      "origin": "cetic",
+      "priority": 0
+    },
+    {
+      "url": "https://www.ipsos.com/pt-br/como-os-brasileiros-enxergam-a-inteligencia-artificial",
+      "text": "Ipsos. Como os brasileiros enxergam a inteligência artificial.",
+      "group": "cotidiano",
+      "origin": "cetic",
+      "priority": 0
+    },
+    {
+      "url": "https://www.ipsos.com/pt-br/ia-vai-transformar-as-vidas-nos-proximos-anos",
+      "text": "Ipsos. IA vai transformar as vidas nos próximos anos.",
+      "group": "cotidiano",
+      "origin": "cetic",
+      "priority": 0
+    },
+    {
+      "url": "https://www.tse.jus.br/comunicacao/noticias/2024/Dezembro/tse-publica-resultados-do-programa-permanente-de-enfrentamento-a-desinformacao-nas-eleicoes-2024",
+      "text": "TRIBUNAL SUPERIOR ELEITORAL. TSE publica resultados do Programa Permanente de Enfrentamento à Desinformação nas Eleições 2024. Brasília: TSE, 2024. Disponível em:[ https://www.tse.jus.br/comunicacao/noticias/2024/Dezembro/tse-publica-resultados-do-programa-permanente-de-enfrentamento-a-desinformacao-nas-eleicoes-2024](https://www.tse.jus.br/comunicacao/noticias/2024/Dezembro/tse-publica-resultados-do-programa-permanente-de-enfrentamento-a-desinformacao-nas-eleicoes-2024). Acesso em: 17 set. 2026.",
+      "group": "regulacao",
+      "origin": "caio",
+      "priority": 4
+    },
+    {
+      "url": "https://www.tse.jus.br/comunicacao/noticias/2024/Outubro/ministra-carmen-lucia-apresenta-balanco-do-2o-turno-das-eleicoes-municipais-de-2024",
+      "text": "Tribunal Superior Eleitoral. Ministra Cármen Lúcia apresenta balanço do 2º turno das eleições municipais de 2024.",
+      "group": "regulacao",
+      "origin": "cetic",
+      "priority": 0
+    },
+    {
+      "url": "https://agenciabrasil.ebc.com.br/geral/noticia/2026-02/conteudos-falsos-criados-com-ia-mais-que-triplicam-entre-2024-e-2025",
+      "text": "Agência Brasil. Conteúdos falsos criados com IA mais que triplicam entre 2024 e 2025.",
+      "group": "desinformacao",
+      "origin": "cetic",
+      "priority": 0
+    },
+    {
+      "url": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-09/levantamento-aponta-uso-de-ia-sem-identificacao-por-candidatos",
+      "text": "Agência Brasil. Levantamento aponta uso de IA sem identificação por candidatos.",
+      "group": "desinformacao",
+      "origin": "cetic",
+      "priority": 0
+    },
+    {
+      "url": "https://revistas.usp.br/eav/pt_BR/article/view/230008",
+      "text": "Universidade de São Paulo. Artigo da revista Estudos Avançados sobre inteligência artificial e desinformação.",
+      "group": "confiabilidade",
+      "origin": "cetic",
+      "priority": 0
+    },
+    {
+      "url": "https://repositorio.usp.br/item/003272226",
+      "text": "Universidade de São Paulo. Pesquisa sobre inteligência artificial e desinformação eleitoral no Brasil. 2025.",
+      "group": "confiabilidade",
+      "origin": "cetic",
+      "priority": 0
+    },
+    {
+      "url": "https://www.gov.br/anpd/pt-br/assuntos/noticias/anpd-publica-radar-tecnologico-sobre-deepfakes",
+      "text": "Autoridade Nacional de Proteção de Dados. Radar Tecnológico sobre Deepfakes.",
+      "group": "desinformacao",
+      "origin": "cetic",
+      "priority": 0
+    },
+    {
+      "url": "https://dadosabertos.tse.jus.br/pt_PT/dataset/denuncias-eleitorais-2024",
+      "text": "Tribunal Superior Eleitoral. Dados abertos: denúncias eleitorais de 2024.",
+      "group": "regulacao",
+      "origin": "cetic",
+      "priority": 0
+    },
+    {
+      "url": "https://arxiv.org/abs/2304.09848",
+      "text": "LIU, Nelson F. et al. Evaluating Verifiability in Generative Search Engines. Stanford University, 2023. Disponível em: https://arxiv.org/abs/2304.09848",
+      "group": "confiabilidade",
+      "origin": "numeros",
+      "priority": 4
+    },
+    {
+      "url": "https://arxiv.org/abs/2312.13096",
+      "text": "KUZNETSOVA, Elizaveta et al. In Generative AI We Trust: Can Chatbots Effectively Verify Political Information? 2023. Disponível em: https://arxiv.org/abs/2312.13096",
+      "group": "confiabilidade",
+      "origin": "numeros",
+      "priority": 4
+    },
+    {
+      "url": "https://doi.org/10.1038/s41586-024-07566-y",
+      "text": "SHUMAILOV, Ilia et al. AI models collapse when trained on recursively generated data. Nature, v. 631, p. 755-759, 2024. Disponível em: https://doi.org/10.1038/s41586-024-07566-y",
+      "group": "confiabilidade",
+      "origin": "numeros",
+      "priority": 4
+    },
+    {
+      "url": "https://unesdoc.unesco.org/ark:/48223/pf0000393473",
+      "text": "UNESCO; UNDP. Freedom of Expression, Artificial Intelligence and Elections. 2024. Disponível em: https://unesdoc.unesco.org/ark:/48223/pf0000393473",
+      "group": "regulacao",
+      "origin": "numeros",
+      "priority": 4
+    },
+    {
+      "url": "https://apnews.com/article/2500813b642169478c27c168aab1b3e3",
+      "text": "ASSOCIATED PRESS. Tests find AI tools readily create election lies from the voices of well-known political leaders. 2024. Disponível em: https://apnews.com/article/2500813b642169478c27c168aab1b3e3",
+      "group": "desinformacao",
+      "origin": "numeros",
+      "priority": 4
+    },
+    {
+      "url": "https://www.reuters.com/world/us/openai-microsoft-ai-tools-generate-misleading-election-images-researchers-say-2024-03-06/",
+      "text": "REUTERS. OpenAI, Microsoft AI tools generate misleading election images, researchers say. 2024. Disponível em: https://www.reuters.com/world/us/openai-microsoft-ai-tools-generate-misleading-election-images-researchers-say-2024-03-06/",
+      "group": "desinformacao",
+      "origin": "numeros",
+      "priority": 4
+    },
+    {
+      "url": "https://www.bbc.com/portuguese/articles/c0l52n6ddkdo",
+      "text": "BBC. Por que o impacto da IA em eleições pode estar sendo exagerado, segundo pesquisador de Oxford. Disponível em: [https://www.bbc.com/portuguese/articles/c0l52n6ddkdo](https://www.bbc.com/portuguese/articles/c0l52n6ddkdo). Acesso em: 17 set. 2026",
+      "group": "confiabilidade",
+      "origin": "caio",
+      "priority": 4
+    },
+    {
+      "url": "https://reutersinstitute.politics.ox.ac.uk/how-generative-ai-chatbots-responded-questions-and-fact-checks-about-2024-uk-general-election",
+      "text": "REUTERS INSTITUTE FOR THE STUDY OF JOURNALISM. How generative AI chatbots responded to questions and fact-checks about the 2024 UK general election. Oxford: University of Oxford, 2024. Disponível em:[ https://reutersinstitute.politics.ox.ac.uk/how-generative-ai-chatbots-responded-questions-and-fact-checks-about-2024-uk-general-election](https://reutersinstitute.politics.ox.ac.uk/how-generative-ai-chatbots-responded-questions-and-fact-checks-about-2024-uk-general-election). Acesso em: 17 set. 2026.",
+      "group": "confiabilidade",
+      "origin": "caio",
+      "priority": 4
+    },
+    {
+      "url": "https://midiademocracia.fgv.br/estudos/inteligencia-artificial-no-mundo-mapeamento-dos-usos-durante-eleicoes-de-2024",
+      "text": "FUNDAÇÃO GETULIO VARGAS. Inteligência Artificial no mundo: mapeamento dos usos durante as eleições de 2024. Rio de Janeiro: FGV Comunicação Rio, 2024. Disponível em:[ https://midiademocracia.fgv.br/estudos/inteligencia-artificial-no-mundo-mapeamento-dos-usos-durante-eleicoes-de-2024](https://midiademocracia.fgv.br/estudos/inteligencia-artificial-no-mundo-mapeamento-dos-usos-durante-eleicoes-de-2024). Acesso em: 17 set. 2026.",
+      "group": "confiabilidade",
+      "origin": "caio",
+      "priority": 4
+    },
+    {
+      "url": "https://www.tse.jus.br/comunicacao/noticias/2024/Fevereiro/normas-do-tse-sobre-uso-de-inteligencia-artificial-nas-eleicoes-sao-apresentadas-no-plenario-do-stf",
+      "text": "TRIBUNAL SUPERIOR ELEITORAL. Normas do TSE sobre uso de inteligência artificial nas eleições são apresentadas no plenário do STF. Brasília: TSE, 2024. Disponível em:[ https://www.tse.jus.br/comunicacao/noticias/2024/Fevereiro/normas-do-tse-sobre-uso-de-inteligencia-artificial-nas-eleicoes-sao-apresentadas-no-plenario-do-stf](https://www.tse.jus.br/comunicacao/noticias/2024/Fevereiro/normas-do-tse-sobre-uso-de-inteligencia-artificial-nas-eleicoes-sao-apresentadas-no-plenario-do-stf). Acesso em: 17 set. 2026.",
+      "group": "regulacao",
+      "origin": "caio",
+      "priority": 4
+    },
+    {
+      "url": null,
+      "text": "BRASIL. Tribunal Superior Eleitoral. Resolução TSE nº 23.732, de 27 de fevereiro de 2024. Regulamenta o uso de inteligência artificial na propaganda eleitoral.",
+      "group": "regulacao",
+      "origin": "numeros",
+      "priority": 4
+    },
+    {
+      "url": null,
+      "text": "Pew Research Center, Americans' Views of 2024 Election News.",
+      "group": "desinformacao",
+      "origin": "numeros",
+      "priority": 1
+    },
+    {
+      "url": null,
+      "text": "Pew Research Center, 2024.",
+      "group": "desinformacao",
+      "origin": "numeros",
+      "priority": 1
+    },
+    {
+      "url": null,
+      "text": "World Economic Forum, Global Risks Report 2024.",
+      "group": "desinformacao",
+      "origin": "numeros",
+      "priority": 1
+    },
+    {
+      "url": null,
+      "text": "World Economic Forum, 2024.",
+      "group": "desinformacao",
+      "origin": "numeros",
+      "priority": 1
+    },
+    {
+      "url": "https://www.tse.jus.br/comunicacao/noticias/2026/Outubro/tse-manda-retirar-do-ar-videos-com-uso-de-inteligencia-artificial-publicados-por-flavio-bolsonaro",
+      "text": "Tribunal Superior Eleitoral. Caso das publicações de Flávio Bolsonaro. 8 out. 2026.",
+      "group": "regulacao",
+      "origin": "revista",
+      "priority": 2
+    }
+  ]
+}
