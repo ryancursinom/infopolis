@@ -4,6 +4,28 @@ const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const $=(s,c=document)=>c.querySelector(s);
 const $$=(s,c=document)=>[...c.querySelectorAll(s)];
 
+/* ---------- Bibliographic references dialog ---------- */
+const referencesDialog=$('#references-dialog');
+const referencesOpen=$('#references-open');
+let referencesScrollStyle='';
+referencesOpen?.addEventListener('click',()=>{
+  if(!referencesDialog||referencesDialog.open)return;
+  referencesScrollStyle=document.body.style.overflow;
+  referencesDialog.showModal();
+  document.body.style.overflow='hidden';
+  $('#references-close')?.focus();
+});
+$('#references-close')?.addEventListener('click',()=>referencesDialog?.close());
+referencesDialog?.addEventListener('click',event=>{
+  if(event.target!==referencesDialog)return;
+  const bounds=referencesDialog.getBoundingClientRect();
+  if(event.clientX<bounds.left||event.clientX>bounds.right||event.clientY<bounds.top||event.clientY>bounds.bottom)referencesDialog.close();
+});
+referencesDialog?.addEventListener('close',()=>{
+  document.body.style.overflow=referencesScrollStyle;
+  referencesOpen?.focus({preventScroll:true});
+});
+
 /* ---------- Sumário ---------- */
 const pages=$$('.frame');
 const pageNumberFor=id=>String(pages.indexOf(document.getElementById(id)?.closest('.frame'))+1).padStart(2,'0');
