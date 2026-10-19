@@ -76,6 +76,29 @@
 .duo .media{height:100%;min-height:520px}
 
 /* ================= Per-section accents ================= */
+/* Shared composition for adjacent topics consolidated into one digital page. */
+.frame--combined{height:auto;min-height:100vh}
+.editorial-spread{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:48px;align-items:start}
+.editorial-spread>article{min-width:0;scroll-margin-top:24px}
+.editorial-spread>article+article{border-left:1px solid var(--line);padding-left:32px}
+.editorial-spread .cols{columns:1}
+.editorial-spread .duo{grid-template-columns:minmax(0,1fr);gap:28px}
+.editorial-spread .duo--media-first .media{order:0}
+.editorial-spread .duo .media{height:220px;min-height:0}
+.editorial-spread .plate{padding:24px 20px}
+.editorial-spread .plot--v{gap:40px;padding-inline:16px}
+.editorial-spread .stats{grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:24px 16px}
+.editorial-spread .stat__val{font-size:clamp(32px,3vw,44px)}
+.frame--dark .editorial-spread .plate__source{color:rgba(244,239,231,.72);border-color:rgba(255,255,255,.2)}
+.frame--dark .editorial-spread .plate .plate__source{color:rgba(15,14,12,.65);border-color:rgba(15,14,12,.14)}
+#p14-confianca .editorial-spread .h{grid-template-columns:minmax(0,1fr) 56px}
+#p14-confianca .editorial-spread .h__track{grid-column:1/-1;grid-row:2}
+#p14-confianca .editorial-spread .h b{grid-column:2;grid-row:1;justify-self:end}
+#p14-confianca .editorial-spread .plate{margin-top:36px}
+@media(max-width:1099px){
+  .editorial-spread{grid-template-columns:minmax(0,1fr);gap:44px}
+  .editorial-spread>article+article{border-left:0;border-top:1px solid var(--line);padding-left:0;padding-top:36px}
+}
 /* One editorial spread, with both original reading destinations preserved. */
 #p19-polarizacao-intro,#p21-vaia,#p23-ia-polarizacao{height:auto;min-height:100vh}
 #p23-ia-polarizacao .polarizacao-spread{grid-template-columns:repeat(2,minmax(0,1fr))}

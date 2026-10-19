@@ -5,11 +5,13 @@ const $=(s,c=document)=>c.querySelector(s);
 const $$=(s,c=document)=>[...c.querySelectorAll(s)];
 
 /* ---------- Sumário ---------- */
-const linkHTML=SECTIONS.map(([id,t],i)=>`<li><a href="#${id}" data-testid="toc-link-${id}"><i>${String(i+1).padStart(2,'0')}</i><span>${t}</span></a></li>`).join('');
+const pages=$$('.frame');
+const pageNumberFor=id=>String(pages.indexOf(document.getElementById(id)?.closest('.frame'))+1).padStart(2,'0');
+const linkHTML=SECTIONS.map(([id,t])=>`<li><a href="#${id}" data-testid="toc-link-${id}"><i>${pageNumberFor(id)}</i><span>${t}</span></a></li>`).join('');
 $('#contents')?.insertAdjacentHTML('beforeend',`<ol class="toc">${linkHTML}</ol>`);
 
 /* ---------- Active section tracking ---------- */
-const frameEls=$$('.frame, .polarizacao-spread>article[id]');
+const frameEls=$$('.frame, .polarizacao-spread>article[id], .editorial-spread>article[id]');
 const setCurrent=id=>{
   $$('#contents a').forEach(a=>{
     const on=a.getAttribute('href')==='#'+id;
