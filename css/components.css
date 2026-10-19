@@ -98,6 +98,13 @@
 .expand__body p{font-size:13.5px;line-height:1.6}
 
 /* ================= Members ================= */
+/* Text-only research variant; shares the OCDE panel interaction. */
+.expand--case{margin-block:24px 28px;break-inside:avoid}
+.expand--case .expand__trigger{grid-template-columns:minmax(0,1fr) 34px;gap:20px;font-size:16px;line-height:1.45}
+.expand--case .expand__body{display:block;padding-top:8px}
+.expand--case .expand__body p{font-size:inherit;line-height:inherit}
+.expand--case .expand__panel.is-open{max-height:none;overflow:visible}
+.frame--dark .expand--case a{color:var(--flame);text-underline-offset:3px}
 .members{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(3,auto);grid-auto-flow:column;gap:24px 56px;margin-top:44px;position:relative;z-index:2;max-width:1100px}
 /* Portraits occupy their own column; names stay beside the image. */
 .member{display:grid;grid-template-columns:clamp(96px,9vw,128px) minmax(0,1fr);align-items:center;gap:24px;border-bottom:1px solid var(--line);padding-bottom:24px;min-width:0}
