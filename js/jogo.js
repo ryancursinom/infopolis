@@ -60,7 +60,7 @@
     $('round-score').textContent=`${totalCorrect()} ${totalCorrect()===1?'ACERTO':'ACERTOS'}`;
     $('round-progress').value=answers.length;
     $('feedback-status').textContent=isCorrect?'VOCÊ ACERTOU · +1 PONTO':'DESTA VEZ, NÃO · +0 PONTO';
-    $('feedback-title').textContent=`Gabarito: ${label(q,q.correct)}.`;
+    $('feedback-title').textContent=`Gabarito: ${label(q,q.correct)}`;
     $('feedback-explanation').textContent=q.explanation;
     $('feedback-lesson').hidden=!q.lesson;$('feedback-lesson').textContent=q.lesson?`Para refletir: ${q.lesson}`:'';
     $('feedback-credit').hidden=!q.credit;$('feedback-credit').textContent=q.credit||'';

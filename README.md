@@ -6,6 +6,12 @@ Revista digital sobre inteligência artificial, desinformação e períodos elei
 
 Abra `index.html` em um navegador moderno. Não é preciso instalar dependências, iniciar backend ou configurar serviços externos.
 
+O jogo **Real ou Fake** está em `jogo.html` e também pode ser aberto pelo sumário ou pelo footer da revista. São dez questões (cinco imagens e cinco afirmações) embaralhadas a cada partida, com dicas, fontes, feedback e pontuação de 0 a 10. A partida roda no navegador e reinicia ao recarregar a página; não envia respostas para servidores.
+
+O QR code do footer aponta para `https://ryancursinom.github.io/infopolis/jogo.html`. O resultado do jogo oferece um link local e um QR code para a revista. Para o novo endereço funcionar online, publique também `jogo.html`, `css/jogo.css`, `js/` e os novos arquivos de `assets/`. A criação local não publica o site automaticamente.
+
+As fontes e os créditos do jogo estão em `docs/jogo-fontes.md`.
+
 Para servir os arquivos por HTTP local, opcionalmente execute nesta pasta:
 
 ```powershell
